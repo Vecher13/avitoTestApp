@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCardTableViewCell" rowHeight="89" id="KGk-i7-Jjw" customClass="UserCardTableViewCell" customModule="avitoTestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wcL-RD-tZi">
+                        <rect key="frame" x="6" y="5" width="460" height="29"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6U-dX-Uoi">
+                                <rect key="frame" x="0.0" y="0.0" width="61.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89995895599" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9X-aP-8t7">
+                                <rect key="frame" x="301" y="0.0" width="159" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rP7-f9-w8M">
+                        <rect key="frame" x="6" y="39" width="460" height="45"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rP7-f9-w8M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="DQV-Hk-XUh"/>
+                    <constraint firstAttribute="trailing" secondItem="rP7-f9-w8M" secondAttribute="trailing" constant="6" id="Ls6-K2-Q3f"/>
+                    <constraint firstAttribute="bottom" secondItem="rP7-f9-w8M" secondAttribute="bottom" constant="5" id="SjP-pe-HTn"/>
+                    <constraint firstItem="wcL-RD-tZi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="sEV-QS-y8e"/>
+                    <constraint firstItem="rP7-f9-w8M" firstAttribute="top" secondItem="wcL-RD-tZi" secondAttribute="bottom" constant="5" id="wZU-vH-YOv"/>
+                    <constraint firstAttribute="trailing" secondItem="wcL-RD-tZi" secondAttribute="trailing" constant="6" id="wdx-3s-oVn"/>
+                    <constraint firstItem="wcL-RD-tZi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="yZe-D9-xf2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="m6U-dX-Uoi" id="csA-q1-kjG"/>
+                <outlet property="phoneNumLabel" destination="m9X-aP-8t7" id="EMW-Ub-BKV"/>
+                <outlet property="skillsLabel" destination="rP7-f9-w8M" id="eBS-Ux-wb2"/>
+            </connections>
+            <point key="canvasLocation" x="242.0289855072464" y="144.30803571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
